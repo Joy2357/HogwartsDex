@@ -1,4 +1,4 @@
-package com.example.hogwartsdex.view.frames
+package com.example.hogwartsdex.view.Listas
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.hogwartsdex.R
-import com.example.hogwartsdex.databinding.StudentElementBinding
+import com.example.hogwartsdex.databinding.VistaEstudiantesBinding
+
 import com.example.hogwartsdex.model.Magos
 
 class VistaEstudiantes(
@@ -14,14 +15,14 @@ class VistaEstudiantes(
     private var magos: ArrayList<Magos>,
     private val clickListener: (Magos) -> Unit
 ) : RecyclerView.Adapter<VistaEstudiantes.ViewHolder>() {
-    class ViewHolder(view: StudentElementBinding) : RecyclerView.ViewHolder(view.root) {
+    class ViewHolder(view: VistaEstudiantesBinding) : RecyclerView.ViewHolder(view.root) {
         val ivStudent = view.ivStudent
         val tvName = view.name
         val tvActor = view.actor
         val tvHouse = view.house
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = StudentElementBinding.inflate(LayoutInflater.from(context))
+        val binding = VistaEstudiantesBinding.inflate(LayoutInflater.from(context))
         return ViewHolder(binding)
     }
     override fun getItemCount(): Int = magos.size

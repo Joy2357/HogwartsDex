@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "738472009648",
+    "project_id": "hogwartsdex",
+    "storage_bucket": "hogwartsdex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738472009648:android:991d0141d4bf4c22d40075",
+        "android_client_info": {
+          "package_name": "com.example.hogwartsdex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738472009648-q5pvhlqnfavqkp6c5abkc6op7nl5ji47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbMW1CDe9JYvoyOyMadIHEKfwWZR2orYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738472009648-q5pvhlqnfavqkp6c5abkc6op7nl5ji47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

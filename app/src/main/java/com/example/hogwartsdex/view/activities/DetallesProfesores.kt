@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.example.hogwartsdex.R
-import com.example.hogwartsdex.databinding.ActivityStaffDetailBinding
+import com.example.hogwartsdex.databinding.ActivityDetallesProfesoresBinding
 
 class DetallesProfesores : AppCompatActivity() {
-    private lateinit var binding: ActivityStaffDetailBinding
+    private lateinit var binding: ActivityDetallesProfesoresBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityStaffDetailBinding.inflate(layoutInflater)
+        binding = ActivityDetallesProfesoresBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val bundle = intent.extras
         if (bundle != null) {

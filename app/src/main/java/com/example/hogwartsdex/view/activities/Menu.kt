@@ -4,13 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.hogwartsdex.databinding.ActivityCharacterMenuBinding
+import com.example.hogwartsdex.databinding.ActivityMenuBinding
 
 class Menu : AppCompatActivity() {
-    private lateinit var binding: ActivityCharacterMenuBinding
+    private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCharacterMenuBinding.inflate(layoutInflater)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
     fun studentsViewClick(view: View) {

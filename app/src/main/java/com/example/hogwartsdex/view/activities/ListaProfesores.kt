@@ -5,20 +5,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.hogwartsdex.databinding.ActivityStaffViewBinding
+import com.example.hogwartsdex.databinding.ActivityListaProfesoresBinding
 import com.example.hogwartsdex.model.Magos
 import com.example.hogwartsdex.network.HogwartsApi
 import com.example.hogwartsdex.network.RetrofitContainer
-import com.example.hogwartsdex.view.frames.VistaProfesores
+import com.example.hogwartsdex.view.Listas.VistaProfesores
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class ListaProfesores : AppCompatActivity() {
-    private lateinit var binding: ActivityStaffViewBinding
+    private lateinit var binding: ActivityListaProfesoresBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityStaffViewBinding.inflate(layoutInflater)
+        binding = ActivityListaProfesoresBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.errorMessage.visibility = View.GONE
         binding.buttonError.visibility = View.GONE
